@@ -84,7 +84,7 @@ class NBAHTTP:
 
         if proxy is None:
             request_proxy = PROXY
-        elif not proxy:
+        elif not proxy or proxy is False:
             request_proxy = None
         else:
             request_proxy = proxy
